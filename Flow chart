@@ -1,0 +1,21 @@
+The FLow Chart <Currently refactoring the code according to the same>
+
+1.	Main function ----> calls the play game class 
+
+2.	the play game class has variables -----> lives, words_left, word 
+
+3.	methods like -----> fetch new word, validate_input, take_input, correct guess and incorrect guess 
+
+4.	In Fetch new word - We check for success if the status code of the API is 200 and return the word 
+
+5.	In valid_input -  We check that only single english letter is entered by user using take_input
+
+6.	The Take_input function is used to take input letters 
+
+7.	for each correct guess we'll decrease letters_left by 1 and call take_input again 
+
+8.	for incorrect guess we'll dec the life and call take_input again 
+
+9. 	Terminating condition - if lives become 0 or letters left become 0. 
+
+10. 	replay variable takes user response if they want to play again. 
